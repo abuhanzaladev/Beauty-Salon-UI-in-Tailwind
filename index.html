@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/output.css">
+    <title>Beauty Salon</title>
+</head>
+
+<body class="overflow-x-hidden box-border">
+
+    <section
+        class="bg-[#F9F3F1] flex flex-col sm:flex-row text-center px-6 py-2 sm:py-0 gap-4 sm:gap-10 font-jost text-[14px]">
+        <div class="flex items-center gap-2">
+            <img src="./assets/images/mail 1.svg" alt="mail-icon">
+            <span>info@louisvillebeautysalon.com</span>
+        </div>
+        <div class="border border-[#ecdcd6] w-[1px] h-[100%] max-sm:hidden sm:py-6"></div>
+        <div class="flex items-center gap-2">
+            <img src="./assets/images/telephone-call 1.svg" alt="phone-icon">
+            <span>+654 555555</span>
+        </div>
+    </section>
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-20 p-4 flex justify-between items-center font-oldStandard font-[700] text-[14px]">
+
+        <a href="#">
+            <img src="./assets/images/LOGO.png" alt="Company Logo">
+        </a>
+
+        <!-- Hamburger menu for small screens -->
+        <button class="text-xl p-2 lg:invisible" onclick="handleMenu()">
+            <i id="menu" class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Navigation Links -->
+        <ul id="nav-menu" class="max-lg:hidden flex gap-8 xl:gap-12">
+            <li><a href="#" class="lg:py-0 py-4">Liposuction</a></li>
+            <li><a href="#" class="lg:py-0 py-4">Coolsculpting</a></li>
+            <li><a href="#" class="lg:py-0 py-4">Ultherapy</a></li>
+            <li><a href="#" class="lg:py-0 py-4">Laser Treatments</a></li>
+            <li><a href="#" class="lg:py-0 py-4">Med Spa</a></li>
+            <li><a href="#" class="lg:py-0 py-4">Spa Menu</a></li>
+            <li><a href="#" class="lg:py-0 py-4">Shop</a></li>
+            <li><a href="#" class="lg:py-0 py-4">Events</a></li>
+            <li><a href="#" class="lg:py-0 py-4">Specials</a></li>
+            <li><a href="#" class="lg:py-0 py-4">About</a></li>
+            <li><a href="#" class="lg:py-0 py-4">Contact</a></li>
+        </ul>
+
+        <!-- Mobile navigation menu (off-canvas) -->
+        <div id="nav-dialog"
+            class="hidden fixed z-10 lg:hidden bg-[#F9F3F1] top-0 left-0 transition-all duration-100 w-full h-full">
+            <div id="nav-bar" class="flex justify-between items-center p-3">
+                <a href="#">
+                    <img src="./assets/images/LOGO.png" alt="Company Logo">
+                </a>
+                <button class="text-xl p-2 lg:invisible" onclick="handleMenu()">
+                    <i id="cross" class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <ul id="nav-menu" class="flex flex-col px-5 font-oldStandard font-[700] text-[14px]">
+                <li><a href="#" class="nav-side-menu">Liposuction</a></li>
+                <li><a href="#" class="nav-side-menu">Coolsculpting</a></li>
+                <li><a href="#" class="nav-side-menu">Ultherapy</a></li>
+                <li><a href="#" class="nav-side-menu">Laser Treatments</a></li>
+                <li><a href="#" class="nav-side-menu">Med Spa</a></li>
+                <li><a href="#" class="nav-side-menu">Spa Menu</a></li>
+                <li><a href="#" class="nav-side-menu">Shop</a></li>
+                <li><a href="#" class="nav-side-menu">Events</a></li>
+                <li><a href="#" class="nav-side-menu">Specials</a></li>
+                <li><a href="#" class="nav-side-menu">About</a></li>
+                <li><a href="#" class="nav-side-menu">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ------------hero section ------------ -->
+    <div class=" w-full h-[70vh] md:h-[90vh] bg-center bg-cover bg-no-repeat flex justify-center items-center"
+        style="background-image: url(./assets/images/banner.png);">
+        <h1 class="font-oldStandard font-[700] md:text-[84px] text-white text-[50px] text-center">Laser Skin Resurfacing
+        </h1>
+    </div>
+
+
+    <section class="flex gap-12 mx-3 sm:mx-8 my-8 py-10 flex-col-reverse md:flex-row items-center">
+        <div class=" p-4 md:w-1/2 flex items-center max-sm:justify-center ">
+            <div class=" inline-block absolute text-center max-sm:hidden">
+                <img class="  md:h-[300px] lg:h-full " src="./assets/images/Rectangle 4.png" alt="">
+            </div>
+            <div class="relative top-0 left-5 flex justify-start">
+                <img class="w-[90%] sm:w-full" src="./assets/images/welcome-to-spa-image.png" alt="">
+            </div>
+        </div>
+
+        <div class="md:w-1/2 font-jost">
+            <h5 class="text-[16px] font-[500] ">We Provide</h5>
+            <h3 class="text-[32px] font-[500] mb-5">Welcome to Spa Center</h3>
+            <p class="text-[16px]  text-[#555555] font-[400] leading-[23.12px] mb-5">Spread over two floors, our
+                beautiful spa offers a soothing
+                environment in
+                which you can rest, relax, and feel completely rejuvenated.</p>
+            <p class="text-[16px] text-[#555555]  font-[400] leading-[23.12px]">Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                remained essentially unchanged. It was popularised in the with the Lorem Ipsum is simply
+                dummy text of the printing and typesetting industry.</p>
+        </div>
+    </section>
+
+     <!-- ----------Our Services---------- -->
+     <section class=" my-5 bg-[#F3F0EB] py-10 font-jost">
+        <div class="flex justify-center items-center w-[80%] text-center m-auto my-8 flex-col ">
+            <h2 class="text-[32px] font-[1000] text-shadow-lg pb-6">Our Services</h2>
+            <p class="text-[#555555] font-[400] pb-5 text-[16px] ">Spread over two floors, our beautiful spa offer a soothing
+                environment in which you can rest, relax and feel competely rejuvenated.</p>
+            <p class="text-[#555555] font-[400] pb-3 text-[16px]  ">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type specimen book. remaining essentially
+                unchanged. It was popularised in the with theLorem Ipsum is simply dummy text of the printing and
+                eentially unchanged.</p>
+        </div>
+        <!-- ------services  list------ -->
+        <div class="flex flex-wrap justify-between relative w-[75%] m-auto mt-6">
+            
+                <div class="flex flex-col justify-center items-center">
+                    <div
+                        class="service-list">
+                        <img src="./assets/images/beauty.png" alt="" class="w-8 h-8">
+                    </div>
+                    <p class="mt-2 sm:text-sm text-xs text-gray-600">Spa</p>
+                </div>
+    
+                <div class="flex flex-col justify-center text-center items-center">
+                    <div
+                        class="service-list">
+                        <img src="./assets/images/massage 2.png" alt="" class="w-8 h-8">
+                    </div>
+                    <p class="mt-2 sm:text-sm text-xs text-gray-600 whitespace-nowrap">Hair Makeup</p>
+                </div>
+    
+                <div class="flex flex-col justify-center items-center">
+                    <div
+                        class="service-list">
+                        <img src="./assets/images/massage 3.svg" alt="" class="w-8 h-8">
+                    </div>
+                    <p class="mt-2 sm:text-sm text-xs text-gray-600">Waxing</p>
+                </div>
+           
+
+          
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="service-list">
+                    <img src="./assets/images/massage 4.png" alt="" class="w-8 h-8">
+                </div>
+                <p class="mt-2 sm:text-sm text-xs text-gray-600">Facial</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="service-list">
+                    <img src="./assets/images/massage 5.png" alt="" class="w-8 h-8">
+                </div>
+                <p class="mt-2 sm:text-sm text-xs text-gray-600">Massage</p>
+            </div>
+           
+        </div>
+
+
+        <!-- ----white box -->
+        <div class="bg-white flex flex-col md:flex-row md:gap-2 mt-10 py-8 w-[90%] sm:w-[80%] m-auto">
+            <!-- options -->
+            <div class="px-0 md:w-1/3 font-[500] text-[16px]">
+                <ul class="py-2 px-0">
+                    <li
+                        class="services-subheadings">
+                        <span
+                            class="services-subheadings-individual">
+                            <i class="fa-solid fa-arrow-right px-4
+                            py-4 text-white"></i>
+                        </span>
+                        Massage Therapy
+                    </li>
+
+                    <li
+                        class="services-subheadings">
+                        <span
+                            class="services-subheadings-individual">
+                            <i class="fa-solid fa-arrow-right px-4
+                            py-4 text-white"></i>
+                        </span>
+                        Facial
+                    </li>
+                    <li
+                        class="services-subheadings">
+                        <span
+                            class="services-subheadings-individual">
+                            <i class="fa-solid fa-arrow-right px-4
+                            py-4 text-white"></i>
+                        </span>
+                        Pedicures
+                    </li>
+                    <li
+                        class=" services-subheadings">
+                        <span
+                            class="services-subheadings-individual">
+                            <i class="fa-solid fa-arrow-right px-4
+                            py-4 text-white"></i>
+                        </span>
+                        Manicures
+                    </li>
+                    <li
+                        class="services-subheadings">
+                        <span
+                            class="services-subheadings-individual">
+                            <i class="fa-solid fa-arrow-right px-4
+                            py-4 text-white"></i>
+                        </span>
+                        Body Wraps
+                    </li>
+                    <li
+                    class="services-subheadings">
+                        <span
+                            class="services-subheadings-individual">
+                            <i class="fa-solid fa-arrow-right px-4
+                            py-4 text-white"></i>
+                        </span>
+                        Waxing & Cosmetics
+                    </li>
+                </ul>
+            </div>
+
+            <!-- image -->
+            <div class="md:w-1/3 m-auto ">
+                <img class="border-[12px] border-[#f6f5f1] w-full rounded-full" src="./assets/images/spa-salon-worker-giving-face-massage 1.png"
+                    alt="">
+            </div>
+
+            <!-- descrition  -->
+            <div class="md:w-1/3 md:px-1 px-4 flex flex-col justify-center items-start">
+                <h2 class="text-[32px] font-[500] px-4 pt-2 pb-0 lg:pb-3 text-shadow-sm">Massage Therapy</h2>
+                <h3 class=" sm:text-sm px-4 text-[#70562C] text-shadow-sm">$40 - $80</h3>
+                <p class="text-[#555555] py-2 lg:py-4 px-4 text-[16px] leading-[23.12px]">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    remaining essentially unchanged. It was popularised in the with theLorem Ipsum is simply dummy text
+                    of the printing and eentially unchanged.</p>
+                <button  class=" text-sm px-4 text-[#70562c] hover:text-[#b87811]">Read More</button>
+            </div>
+        </div>
+
+    </section>
+
+
+     <!-- -----------beauty and spa center------------ -->
+     <section class="px-6 py-10 font-jost">
+        <!-- Section Heading and Paragraph -->
+        <div class="">
+
+            <h2 class="font-[700] text-[30px] md:text-[52px] font-oldStandard pb-4 text-[#B58152]">BEAUTY AND SPA CENTER</h2>
+            <p class="text-[16px] font-[400] text-[#555555] w-[95%] pb-4">Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. remaining essentially unchanged. It was popularised
+                in the with theLorem Ipsum is simply dummy text of the printing and eentially unchanged</p>
+        </div>
+
+        <!-- Three Images in a Row -->
+        <div class=" flex  flex-col md:flex-row justify-center items-center gap-5 pt-5 font-jost">
+
+            <div class="w-full md:w-1/3 hover:opacity-80">
+                <div class="relative">
+                    <img src="./assets/images/spa1.png" alt="Image 2" class="m-auto rounded-sm">
+
+                    <div
+                    class="first-image-gallery">
+                    <p class="text-[#B58152] text-[16px]">Sauna Massage</p>
+                    <h3 class="text-[16px] font-bold"> NATURAL HEALTH</h3>
+                    </div>
+                </div>         
+            </div>
+
+            <div class="w-full md:w-1/3 hover:opacity-80">
+                <div class="relative">
+                    <img src="./assets/images/spa2.png" alt="Image 2" class="m-auto rounded-sm">
+
+                    <div
+                    class="first-image-gallery">
+                    <p class="text-[#B58152] text-[16px]">Spa Treatment</p>
+                    <h3 class="text-[16px] font-bold">Mind Relaxation</h3>
+                    </div>
+                </div>         
+            </div>
+
+            <div class="w-full md:w-1/3 hover:opacity-80">
+                <div class="relative">
+                    <img src="./assets/images/spa3.png" alt="Image 2" class="m-auto rounded-sm">
+
+                    <div
+                    class="first-image-gallery">
+                    <p class="text-[#B58152] text-[16px]">Cosmetology</p>
+                    <h3 class="text-[16px] font-bold">Essential Balance</h3>
+                    </div>
+                </div>         
+            </div>
+
+        </div>
+    </section>
+
+     <!-- ---------specialist------------- -->
+     <div class=" my-6 bg-[#F3F0EB] py-14 font-jost">
+        <!-- Centered Heading and Paragraph -->
+        <div class="flex justify-center">
+            <div class="w-[90%] sm:w-[70%] text-center">
+                <h2 class="text-[32px] font-[700] pb-8">Our Experienced Specialists</h2>
+                <p class="text-[16px] text-[#555555]">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled</p>
+            </div>
+        </div>
+        <!-- Image Row -->
+        <div class="flex flex-col md:flex-row justify-center items-center gap-5 pt-5 mx-2">
+            <!-- Card 1 -->
+            <div class="w-full md:w-1/3">
+                <div class="relative group">
+                    <img src="./assets/images/expert1 1.png"
+                        class="w-full h-auto  duration-300 ease-in-out group-hover:opacity-100" alt="Specialist 1">
+                    <div
+                        class="specialist-gallery">
+                        <h6 class="text-white text-lg font-semibold">Mattie Joshef</h6>
+                        <p class="text-white">Dermatologist</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="w-full md:w-1/3">
+                <div class="relative group">
+                    <img src="./assets/images/expert2 1.png"
+                        class="w-full h-auto  duration-300 ease-in-out group-hover:opacity-100" alt="Specialist 2">
+                    <div
+                        class="specialist-gallery">
+                        <h6 class="text-white text-lg font-semibold">Mattie Joshef</h6>
+                        <p class="text-white">Dermatologist</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="w-full md:w-1/3">
+                <div class="relative group">
+                    <img src="./assets/images/expert3 1.png"
+                        class="w-full h-auto  duration-300 ease-in-out group-hover:opacity-100" alt="Specialist 3">
+                    <div
+                        class="specialist-gallery">
+                        <h6 class="text-white text-lg font-semibold">Mattie Joshef</h6>
+                        <p class="text-white">Dermatologist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- product section -->
+     <section class="p-6 font-jost">
+        <div class="flex flex-col md:flex-row md:gap-5 md:justify-between">
+            <div class="md:w-1/2">
+                <h1 class="font-[700] text-[32px] p-3">Our Exclusive Products</h1>
+                <p class="text-[16px] text-[#555555]">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled</p>
+            </div>
+            <div class="flex justify-center md:block">
+                <button
+                    class="px-5 py-2 m-4 bg-[#ed806b] text-white rounded-[25px] w-fit h-fit hover:shadow-lg hover:bg-opacity-85">All
+                    Products</button>
+            </div>
+        </div>
+
+        <div class="flex gap-3 flex-col md:flex-row my-7">
+            <div class="flex flex-col sm:flex-row sm:gap-3 w-full">
+                <!-- -----product 1----- -->
+                <div class="flex flex-col justify-center text-center border shadow-lg relative group sm:w-1/2 my-2">
+                    <div>
+                        <h5 class="font-bold text-xl p-3">Face Cleaner</h5>
+                        <div class="stars">
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                        </div>
+                        <p class="text-pink-500">$20.00</p>
+                        <div class="">
+                            <img class="" src="./assets/images/—Pngtree—face wash vector_7613431.png" alt="">
+                        </div>
+                        <div
+                            class="product-gallery">
+                            <span class="product-icons">
+                                <i class="fa-solid fa-heart text-2xl text-[#f9a291]"></i>
+                            </span>
+                            <span class="product-icons">
+                                <i class="fa-solid fa-cart-shopping text-2xl text-[#f9a291]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- -----product 2----- -->
+                <div class="flex flex-col justify-center text-center border shadow-lg  relative group sm:w-1/2 my-2">
+                    <div>
+                        <h5 class="font-bold text-xl p-3">Olive Oil</h5>
+                        <div class="stars">
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                        </div>
+                        <p class="text-pink-500">$20.00</p>
+                        <div>
+                            <img src="./assets/images/—Pngtree—fresh green rosemary and sage_14897287.png" alt="">
+                        </div>
+                        <div
+                            class="product-gallery">
+                            <span class="product-icons">
+                                <i class="fa-solid fa-heart text-2xl text-[#f9a291]"></i>
+                            </span>
+                            <span class="product-icons">
+                                <i class="fa-solid fa-cart-shopping text-2xl text-[#f9a291]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-3 w-full">
+                <!-- -----product 3----- -->
+                <div class="flex flex-col justify-center text-center border shadow-lg relative group sm:w-1/2 my-2">
+                    <div>
+                        <h5 class="font-bold text-xl p-3">Skin & Body Cleaner</h5>
+                        <div class="stars">
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                        </div>
+                        <p class="text-pink-500">$20.00</p>
+                        <div class="h-[300px]">
+                            <img class="m-auto " src="./assets/images/images (1).jpg" alt="">
+                        </div>
+                        <div
+                            class="product-gallery">
+                            <span class="product-icons">
+                                <i class="fa-solid fa-heart text-2xl text-[#f9a291]"></i>
+                            </span>
+                            <span class="product-icons">
+                                <i class="fa-solid fa-cart-shopping text-2xl text-[#f9a291]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- -----product 4----- -->
+                <div class="flex flex-col justify-center text-center border shadow-lg relative group sm:w-1/2 my-2">
+                    <div>
+                        <h5 class="font-bold text-xl p-3">Luxury Perfume</h5>
+                        <div class="stars">
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                            <i class="fa-solid fa-star text-[#ff9922]"></i>
+                        </div>
+                        <p class="text-pink-500">$20.00</p>
+                        <div>
+                            <img src="./assets/images/—Pngtree—pink perfume bottle_5716276.png" alt="">
+                        </div>
+                        <div
+                            class="product-gallery">
+                            <span class="product-icons">
+                                <i class="fa-solid fa-heart text-2xl text-[#f9a291]"></i>
+                            </span>
+                            <span class="product-icons ">
+                                <i class="fa-solid fa-cart-shopping text-2xl text-[#f9a291]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+     <!-- Our Special Offers -->
+     <section class="bg-[#F9F3F1] w-full m-auto flex flex-col md:flex-row md:gap-0 md:justify-center px-2 py-8 font-jost">
+
+        <div class=" md:w-[70%] flex flex-col px-4 pt-4 pb-1md:p-6">
+            <h1 class="font-[700] text-[30px]  md:text-[52px] pb-4 text-[#B58152] font-oldStandard">Our Special Offers</h1>
+            <p class="text-[#555555] text-[16px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled</p>
+
+            <div class="bg-white flex flex-col justify-between md:justify-left items-center sm:gap-7 gap-4 md:flex-row md:gap-2 px-1 py-3 my-6 md:w-[80%] w-full lg:w-[60%] ">
+
+                <div class="flex gap-2 ">
+                    <i class="fa-regular fa-face-smile-beam my-auto  text-3xl"></i>
+                    <div>
+                        <h2 class="font-semibold text-[20px]">283+</h2>
+                        <p class="text-gray-500 text-sm">HAPPY CLIENTS</p>
+                    </div>
+                </div>
+                <div class="flex  gap-2  ">
+                    <img class="w-[35px] h-[px]" src="./assets/images/trophy1.png" alt="">
+                    <div>
+                        <h2 class="font-semibold text-[20px]">232+</h2>
+                        <p class="text-gray-500 text-sm">WIN AWARDS</p>
+                    </div>
+                </div>
+                <div class="flex  gap-2   ">
+                    <i class="fa-regular fa-user my-auto  text-3xl"></i>
+                    <div>
+                        <h2 class="font-semibold text-[20px]">545+</h2>
+                        <p class="text-gray-500 text-sm">OUR TRAINER</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class=" md:w-1/2 p-8  flex justify-center items-center" >
+            <div class="w-[70%] md:w-[100%] md:h-[100%] h-[70%] bg-contain bg-center bg-no-repeat"
+             style="background-image: url('./assets/images/Ellipse\ 7.svg');">
+               
+                <img class="rounded-[50%] w-[400px] m-auto mt-[10px] h-auto"
+                src="./assets/images/two-women-beautician-doctor-client-stand-mirror-consultation-discussing-upcoming-procedures-beautician-talks-about-sculpting-face 1.png"
+                alt="">
+            </div>       
+        </div>
+
+    </section>
+
+      <!-- Make Appoinment -->
+      <section class="bg-no-repeat bg-cover text-center flex flex-col justify-center items-center font-jost py-8"
+      style="background-image: url('./assets/images/bg-image.png');">
+      <div class="pt-10">
+          <h1 class="bg-transparent font-bold text-2xl p-3 text-white ">Make An Appointment</h1>
+          <p class="text-white text-[16px] p-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              <br> Lorem Ipsum has been
+          </p>
+      </div>
+
+      <div class="bg-white w-[80%] sm:w-[70%] md:w-[60%] p-4 my-8 mb-16 ">
+          <form class="flex flex-col gap-6">
+              <div class="flex flex-col sm:flex-row gap-8">
+                  <input
+                      class="bg-transparent w-[90%] m-auto p-3 border-b border-gray-500 focus:border-b focus:border-orange-500 outline-none"
+                      type="text" placeholder="Name">
+                  <input
+                      class="bg-transparent w-[90%] m-auto p-3 border-b border-gray-500 focus:border-orange-500 outline-none"
+                      type="text" placeholder="Email">
+              </div>
+
+              <div class="flex flex-col sm:flex-row gap-8 pb-3">
+                  <input
+                      class="bg-transparent w-[90%] m-auto p-3 border-b border-gray-500 focus:border-b focus:border-orange-500 outline-none"
+                      type="text" placeholder="Phone">
+                  <input
+                      class="bg-transparent w-[90%] m-auto p-3 border-b border-gray-500 focus:border-orange-500 outline-none"
+                      type="text" placeholder="Message">
+              </div>
+
+              <div class="flex justify-end">
+                  <button
+                      class="px-14 py-3 m-4 bg-[#ed806b] text-white rounded-[25px] w-fit h-fit hover:shadow-lg hover:bg-opacity-85">Send</button>
+              </div>
+          </form>
+      </div>
+  </section>
+
+   <!-- ------Our Blogs------  -->
+   <section class="px-2 md:px-4 mt-16 md:mx-2 font-jost my-8">
+    <div class="text-center">
+        <h2 class="text-[32px] font-[700] pb-4">Our Blog</h2>
+        <p class="text-[#555555] text-[16px] p-3 w-[90%] md:w-[70%] m-auto">Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+            an unknown printer took a galley of type and scrambled</p>
+    </div>
+
+    <div class=" flex flex-col  items-center md:flex-row py-8 gap-4 pb-12">
+        <div class="bg-[#EFEDED] w-full md:w-1/2">
+            <img class="w-full  object-cover " src="./assets/images/blog.png" alt="">
+
+            <div class="flex justify-between m-auto rounded-[25px] py-0 my-2  px-1 w-[80%] h-8 bg-white">
+                <span class="text-center">
+                    <img class="inline-block rounded-[35px] w-12 " src="./assets/images/3.png" alt="">
+                    <p class=" inline-block text-gray-500 text-sm">Rubina Alfa</p>
+                </span>
+                <span class="text-center my-auto">
+                    <i class="inline-block text-gray-500 text-sm fa-solid fa-calendar-days"></i>
+                    <p class="inline-block text-gray-500 text-sm">12 Oct 2021</p>
+                </span>
+            </div>
+
+            <h1 class="font-bold text-xl pb-4 font-serif px-3 w-[80%] m-auto">Specialty Spa Treatments For Your
+                Face, Body, Hands, & Feet</h1>
+
+            <button
+                class="  px-5 py-2 mx-[70px] mb-8 bg-[#ed806b] text-white hover:shadow-lg hover:bg-opacity-85 rounded-[25px]">Read
+                More</button>
+        </div>
+
+        <div class=" w-full md:w-1/2 flex flex-col gap-3">
+            <div class="bg-[#EFEDED] py-6">
+                <div class="flex justify-between m-auto rounded-[25px] py-0 my-2  px-1 w-[80%] h-8 bg-white">
+                    <span class="text-center">
+                        <img class="inline-block rounded-[35px] w-12 " src="./assets/images/3.png" alt="">
+                        <p class=" inline-block text-gray-500 text-sm">Rubina Alfa</p>
+                    </span>
+                    <span class="text-center my-auto">
+                        <i class="inline-block text-gray-500 text-sm fa-solid fa-calendar-days"></i>
+                        <p class="inline-block text-gray-500 text-sm">12 Oct 2021</p>
+                    </span>
+                </div>
+
+                <h1 class="font-bold text-xl py-4 font-serif px-3 w-[80%] m-auto">Specialty Spa Treatments For Your
+                    Face, Body, Hands, & Feet</h1>
+
+                <button
+                    class="  px-5 py-2 mx-[70px] mb-8 bg-[#ed806b] text-white hover:shadow-lg hover:bg-opacity-85 rounded-[25px]">Read
+                    More</button>
+            </div>
+
+            <div class="bg-[#EFEDED] py-6">
+                <div class="flex justify-between m-auto rounded-[25px] py-0 my-2  px-1 w-[80%] h-8 bg-white">
+                    <span class="text-center">
+                        <img class="inline-block rounded-[35px] w-12" src="./assets/images/3.png" alt="">
+                        <p class=" inline-block text-gray-500 text-sm">Rubina Alfa</p>
+                    </span>
+                    <span class="text-center my-auto">
+                        <i class="inline-block text-gray-500 text-sm fa-solid fa-calendar-days"></i>
+                        <p class="inline-block text-gray-500 text-sm">12 Oct 2021</p>
+                    </span>
+                </div>
+
+                <h1 class="font-bold text-xl  py-4 font-serif px-3 w-[80%] m-auto">Specialty Spa Treatments For Your
+                    Face, Body, Hands, & Feet</h1>
+
+                <button
+                    class="  px-5 py-2 mx-[70px] mb-8 bg-[#ed806b] text-white hover:shadow-lg hover:bg-opacity-85 rounded-[25px]">Read
+                    More</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+     <!-- -----footer-----   -->
+     <footer class="bg-[#191919] text-white p-4 px-5 py-6  flex flex-col md:flex-row gap-[34px] font-jost ">
+        
+        <div class="w-full md:w-1/4">
+            <img src="./assets/images/13.png" alt="">
+            <p class="text-[#DBDBDB] text-[16px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever industry. Lorem Ipsum has been the lorem.</p>
+
+            <div class="flex gap-4 my-3">
+                <!-- Facebook Icon -->
+                <div class="footer-icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+
+                <!-- Twitter Icon -->
+                <div class="footer-icons">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+
+                <!-- Pinterest Icon -->
+                <div class="footer-icons">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+
+                <!-- Instagram Icon -->
+                <div class="footer-icons">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+                <!-- YouTube Icon -->
+                <div class="footer-icons">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+       
+           <div class="w-full md:w-3/4 flex flex-col sm:flex-row gap-5 mr-8">
+            <div class="w-full sm:w-[25%]">
+                <h3 class="font-bold my-3 text-[20px]">Recent Post</h3>
+                <ul class="flex flex-col gap-3 text-[16px]">
+                    <li>About</li>
+                    <li>FAQ</li>
+                    <li>Career</li>
+                    <li>Our Team</li>
+                    <li>Services</li>
+
+                </ul>
+            </div>
+
+            <div class="w-full sm:w-[30%]">
+                <h3 class="font-bold text-[20px] my-3">Working Hours</h3>
+                <ul class="flex flex-col gap-3 text-[16px]">
+                    <li>Monday – Friday: 8am – 6pm EST</li>
+                    <li>Saturday: 9am – 5pm EST</li>
+                    <li>Sunday: 9am – 4pm EST</li>
+                </ul>
+            </div>
+
+            <div class=" w-full sm:w-[45%]">
+                <h3 class="font-bold text-[20px] my-3">Contact Us</h3>
+                <ul class="flex flex-col gap-3 text-[16px] ">
+                    <li>90 St Johns Brooklyn, NY, United States</li>
+                    <li>contact.louisvillebeautysalon@gmail.com</li>
+                    <li>Phone: (+01)888.999.77</li>
+                </ul>
+            </div>
+           </div>
+       
+    </footer>
+
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
